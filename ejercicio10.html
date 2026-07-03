@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Celsius a Fahrenheit</title>
+    <link rel="stylesheet" href="css/ejercicio9.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calculadora de grados Celsius a Fahrenheit</h1>
+        <p class="parrafo">Alumna: Gandarillas Melissa.</p>
+        <p class="parrafo">Materia: Programación Web. Verano 2026.</p>
+        <p class="parrafo">Horario: 10 - 13 hrs.</p>
+        <form id="form-calculadora" onsubmit="convertir(event)">
+            <p class="subtitulo">Ingresa los grados Celsius a convertir</p>
+            <div class="grupo-formulario">
+                <label Aksfor="celsius">Grados Celsius: </label>
+                <input type="number" step="1" id="celsius" required placeholder="Ej. 25">
+            </div>
+            <button type="submit" class="boton-enviar">Convertir</button>
+            <div class="grupo-formulario">
+                <label for="fahrenheit">Resultado en Fahrenheit: </label>
+                <input type="text" id="fahrenheit" required readonly>
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio10.js"></script>
+</body>
+</html>
