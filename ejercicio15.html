@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio9.css">
+</head>
+<body>
+    <h1>Cálculos con datos de estudiantes</h1>
+    <p class="parrafo">Ingresa los siguientes datos de los estudiantes.</p>
+    <div class="contenedor-formulario">
+        <div class="grupo-formulario">
+                <label for="nombre">Nombre del estudiante:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe el nombre del estudiante" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+">
+            </div>
+            <div class="grupo-formulario">
+                <label for="calificacion">Calificación del estudiante:</label>
+                <input type="number" id="calificacion" name="calificacion" min="0" max="100" required placeholder="Escribe la calificación del estudiante (0-100)">
+            </div>
+
+            <div class="grupo-doble">
+                <button type="button" class="boton-enviar" onclick="agregarEstudiante()">Agregar estudiante</button>
+                <button type="button" class="boton-enviar" onclick="calcular()">Calcular</button>
+            </div>
+
+            <p class="parrafo">Datos calculados: </p>
+
+            <div class="grupo-formulario">
+                <label for="promedio">Promedio de todos los estudiantes: </label>
+                <input type="text" id="promedio" name="promedio" required readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="calMasAlta">Estudiante con la calificación más alta. </label>
+                    <label for="calMasAlta">Calificación:</label>
+                    <input type="text" id="calMasAlta" name="calMasAlta" required readonly>
+                    <label for="nombreMasAlta">Nombre:</label>
+                    <input type="text" id="nombreMasAlta" class="lista-alumnos" name="nombreMasAlta" required readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="calMasBaja">Estudiante con la calificación más baja. </label>
+                    <label for="calMasBaja">Calificación:</label>
+                    <input type="text" id="calMasBaja" name="calMasBaja" required readonly>
+                    <label for="nombreMasBaja">Nombre:</label>
+                    <input type="text" id="nombreMasBaja" class="lista-alumnos" name="nombreMasBaja" required readonly>
+            </div>
+    </div>
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

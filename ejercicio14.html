@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos con arreglos</title>
+    <link rel="stylesheet" href="css/ejercicio9.css">
+</head>
+<body>
+    <h1 class="titulo">Cálculos con arreglos</h1>
+    <div class="contenedor-formulario">
+        <p class="parrafo">Ingresa una serie de números separados por comas:</p>
+        <form id="form-calculadora" onsubmit="calcularMayor(event); calcularMenor(event); calcularPromedio(event);">
+            <div class="grupo-formulario">
+                <label for="numeros">Números:</label>
+                <input type="text" id="numeros" name="numeros" required placeholder="Escribe los números separados por comas">
+            </div>
+            <button type="submit" class="boton-enviar">Calcular</button>
+            <div class="grupo-formulario">
+                <label for="resultadoMayor">Número mayor:</label>
+                <input type="text" id="resultadoMayor" required readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="resultadoMenor">Número menor:</label>
+                <input type="text" id="resultadoMenor" required readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="resultadoPromedio">Promedio:</label>
+                <input type="text" id="resultadoPromedio" required readonly>
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

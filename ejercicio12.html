@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de pesos a dólares</title>
+    <link rel="stylesheet" href="css/ejercicio9.css">
+</head>
+<body>
+    <h1 class="titulo">Conversor de pesos mexicanos a dólares</h1>
+    <div class="contenedor-formulario">
+        <form id="form-calculadora" onsubmit="conversor(event)">
+            <div >
+                <label Askfor="pesos">Pesos mexicanos:</label>
+                <input type="number" id="pesos" name="pesos" min="0" step="1" required placeholder="Ejemplo: 112 (solo números positivos)">
+            <button type="submit" class="boton-enviar">Convertir</button>
+            </div>
+            <div>
+                <label for="dolares">Dólares:</label>
+                <input type="text" id="resultado" required readonly>
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio12.js"></script>
+</body>
+</html>
