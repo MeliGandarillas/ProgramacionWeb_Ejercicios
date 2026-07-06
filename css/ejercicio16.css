@@ -6,6 +6,11 @@ body {
     padding-top: 40px;
 }
 
+#lista {
+    list-style-type: none;
+    padding: 0;
+}
+
 .contenedor-calculadora {
     background: rgb(240, 202, 197);
     padding: 20px;
@@ -20,6 +25,41 @@ h1 {
 
 .grupo {
     margin-bottom: 15px;
+}
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tarea-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.tarea-texto {
+    font-size: 14px;
+    color: #334155;
+}
+.tarea-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.tarea-item button:hover {
+    background-color: #b02a37;
 }
 
 label {

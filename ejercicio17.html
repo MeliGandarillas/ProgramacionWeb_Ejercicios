@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 17</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>Tareas pendientes</h1>
+        <div class="grupo">
+            <label for="nuevaTarea">Nueva tarea:</label>
+            <input type="text" id="nuevaTarea">
+        </div>
+
+        <div class="botones">
+            <button onclick="agregarTarea()">Agregar tarea</button>
+        </div>
+
+        <ul id="listaTareas" class="lista-tareas"></ul>
+    </div>
+    <script src="js/ejercicio17.js"></script>
 </body>
 </html>
