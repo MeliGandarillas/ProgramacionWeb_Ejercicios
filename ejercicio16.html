@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Calculadora</h1>
+
+        <div class="grupo">
+            <label for="numero1">Número 1:</label>
+            <input type="text" id="numero1">
+        </div>
+
+        <div class="grupo">
+            <label for="numero2">Número 2:</label>
+            <input type="text" id="numero2">
+        </div>
+
+        <div class="botones">
+            <button onclick="calcularOperacion('suma')">sumar</button>
+            <button onclick="calcularOperacion('resta')">restar</button>
+            <button onclick="calcularOperacion('multiplicacion')">multiplicar</button>
+            <button onclick="calcularOperacion('division')">dividir</button>
+        </div>
+
+        <div class="grupo">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+        </div>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
